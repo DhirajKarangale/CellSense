@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         networkInfoTextView = findViewById(R.id.networkInfoTextView);
-        Button buttonShow = findViewById(R.id.buttonShow);
+        Button buttonShow = findViewById(R.id.yourButtonId);
 
         buttonShow.setOnClickListener(new View.OnClickListener() {
             @Override
