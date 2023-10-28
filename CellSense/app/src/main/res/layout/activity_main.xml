@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <View
+        android:id="@+id/shadowedBar"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@+id/appTitleTextView"
+        android:background="@drawable/shadowed_bar_background" />
+
+    <TextView
+        android:id="@id/appTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CellSense"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/appTitleColor"
+        android:elevation="2dp"
+        android:translationZ="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/shadowedBar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/networkInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Info Placeholder"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/networkInfoColor" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/yourButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/signatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="-DK-"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+</RelativeLayout>
